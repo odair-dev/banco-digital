@@ -1,0 +1,296 @@
+@keyframes animationSubMenu{
+    0%{transform: translateY(-50px);}
+    100%{transform: translateY(0);}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes animationModal{
+    0%{transform: translateY(-500px);}
+    100%{transform: translateY(0);}
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+body{
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-default);
+}
+body .divContainer{
+    width: 80%;
+    min-width: 1024px;
+    max-width: 1366px;
+    height: 100%;
+    background: white;
+}
+body header{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 0 10px black;
+    position: fixed;
+    z-index: 1;
+}
+body header .containerHeader{
+    width: 80%;
+    min-width: 1024px;
+    max-width: 1366px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+body header .divLogotype{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+body header .divLogotype .pLogo{
+    font-family: var(--fonte-default);
+    text-align: left;
+}
+body header .divLogotype .pLogo .sLogotype{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--color-01);
+}
+body header .divLogotype .pLogo .sSubtitle{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+body header .navMenu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+body header .navMenu .ulMenu{
+    display: flex;
+    justify-content: center;
+}
+body header .navMenu .ulMenu .liMenu{
+    margin: 0 1.5rem;
+    min-width: fit-content;
+    cursor: pointer;
+    font-weight: 400;
+    color: rgb(16, 16, 16);
+}
+body header .navMenu .ulMenu .clicado{
+    margin: 0 1.5rem;
+    min-width: fit-content;
+    cursor: pointer;
+    color: var(--color-01);
+}
+.ulSubMenu{
+    min-width: 105px;
+    position: absolute;
+    top: 50px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 0 0 8px 8px;
+    animation: animationSubMenu .3s;
+}
+.liSubMenu{
+    font-size: .8rem;
+    color: rgb(16, 16, 16);
+    padding: .5rem;
+}
+body header form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+body header form .iSearch{
+    width: 1rem;
+    height: 2.7rem;
+    border-radius: 8px;
+    border: 1.5px solid grey;
+    padding: 0 0 0 1rem;
+    margin-right: -2.2rem;
+    outline-style: none;
+    display: none;
+}
+body header form .fa-solid{
+    color: var(--color-01);
+}
+body header form .btnNewAccount{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: none;
+    background: var(--color-01);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+body header form .btnNewAccount:hover{
+    background: rgb(28, 172, 78);
+}
+body header form .btnAccessAccount{
+    width: 5rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: 2px solid var(--color-01);
+    background: none;
+    color: var(--color-01);
+    font-weight: 600;
+    cursor: pointer;
+}
+body header form .btnAccessAccount:hover{
+    background: rgb(28, 172, 78);
+    border: 2px solid rgb(28, 172, 78);
+    color: white;
+}
+/************* CONTEÚDO *************/
+body main .divCard .ulCard .liCard{
+    margin-top: 70px;
+    display: flex;
+}
+body main .divCard .ulCard .liCard .divLeft{
+    width: 50%;
+    height: 500px;
+}
+body main .divCard .ulCard .liCard .divLeft .pTitle{
+    font-size: 2.5rem;
+    font-weight: 900;
+    width: 100%;
+    line-height: 125%;
+    letter-spacing: .1rem;
+    margin-top: 150px;
+    color: rgb(16, 16, 16);
+}
+body main .divCard .ulCard .liCard .divLeft .pText{
+    font-size: 1rem;
+    font-weight: 300;
+    width: 450px;
+    line-height: 125%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: rgb(128, 128, 128);
+}
+body main .divCard .ulCard .liCard .divLeft .btnNewAccount{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    border: none;
+    background: var(--color-01);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+body main .divCard .ulCard .liCard .divLeft .btnNewAccount:hover{
+    background: rgb(28, 172, 78);
+}
+body main .divCard .ulCard .liCard .divRigth{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body main .divCard .ulCard .liCard .divRigth figure{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+body main .divCard .ulCard .liCard .divRigth figure img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body footer{
+    width: 100%;
+    height: 200px;
+    background: rgb(16, 61, 32);
+    margin-top: 5rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+}
+body footer i{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+body #dialogModal{
+    width: 98vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    border: none;
+    background: none;
+}
+body dialog .divModal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body dialog .divModal .containerModal{
+    width: 320px;
+    height: 500px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    animation: animationModal .7s;
+}
+body dialog .divModal .containerModal .closeModal{
+    width: fit-content;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    font-weight: 700;
+    background: var(--color-01);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: .25rem .5rem;
+    cursor: pointer;
+}
+body dialog .divModal .containerModal h1{
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--color-01);
+}
+body dialog .divModal .containerModal form{
+    border: 1px solid grey;
+    /* border-radius: 8px; */
+    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 1rem;
+}
+body dialog .divModal .containerModal form input{
+    height: 2.5rem;
+}
+body dialog .divModal .containerModal form button{
+    height: 2.5rem;
+    background: var(--color-01);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    margin-top: 1rem;
+}

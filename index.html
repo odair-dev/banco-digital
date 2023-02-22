@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Digital Genérico</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalstyle.css">
+    <link rel="stylesheet" href="./src/styles/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <!-- JS -->
+    <script src="./src/scripts/data.js"></script>
+    <script type="module" src="./src/scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="containerHeader">
+            <div class="divLogotype">
+                <p class="pLogo"><span class="sLogotype">logotipo</span> <span class="sSubtitle">Banco</span> Digital</p>
+            </div>
+            <nav class="navMenu">
+                <ul class="ulMenu">
+                    
+                </ul>
+            </nav>
+            <form>
+                <input type="text" class="iSearch"><i class="fa-solid fa-magnifying-glass"></i>
+                <button id="btnNewAccountHeader" class="btnNewAccount">Abra sua conta</button>
+                <button class="btnAccessAccount">Acessar</button>
+            </form>
+        </div>
+    </header>
+    <div class="divContainer">
+        <main>
+            <div class="divCard">
+                <ul class="ulCard">
+                    <li class="liCard">
+                        <div class="divLeft">
+                            <p class="pTitle">Abra sua conta digital gratuita</p>
+                            <p class="pText">Mais que uma conta digital completa: um super app com vários serviços para simplificar seu dia a dia.</p>
+                            <button class="btnNewAccount">Abra sua conta</button>
+                        </div>
+                        <div class="divRigth">
+                            <figure>
+                                <img src="./src/img/woman-with-headphones-listening-music.jpg" alt="Pessoa ouvindo música">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="liCard">
+                        <div class="divRigth">
+                            <figure>
+                                <img src="./src/img/9375bbd3e5cb04b736cdadc55250d73f.jpg" alt="Pessoa ouvindo música">
+                            </figure>
+                        </div>
+                        <div class="divLeft">
+                            <p class="pTitle">Cartão de crédito sem anuidade e com cashback</p>
+                            <p class="pText">Seu novo cartão já vem habilitado para compras no débito e pode ter a função crédito, sujeito a análise. É sem anuidade e você ainda ganha cashback na fatura.</p>
+                            <button class="btnNewAccount">Abra sua conta</button>
+                        </div>  
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-instagram"></i>
+    </footer>
+    <dialog id="dialogModal">
+        <div class="divModal">
+            <div class="containerModal">
+                <button class="closeModal">X</button>
+                <h1>Cadastro Rápido</h1>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" placeholder="Digite seu nome" required>
+                    <label for="user">Usuário:</label>
+                    <input id="user" type="text" placeholder="Digite seu usuário" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="" id="password" placeholder="Digite sua senha" required>
+                    <input type="password" name="" id="password2" placeholder="Digite novamente sua senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+</body>
+</html>
